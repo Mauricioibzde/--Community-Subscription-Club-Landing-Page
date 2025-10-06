@@ -55,8 +55,8 @@ section.book-animation {
   position: absolute;
   animation: float 4s ease-in-out infinite;
   width: max-content;
-  left: -19rem;
-  top: 21rem;
+  left: -15rem;
+  top: 16rem;
 
 
   & img:nth-child(2) {
@@ -78,7 +78,7 @@ section.book-animation {
   animation: float 4s ease-in-out infinite;
   width: max-content;
   height: 6rem;
- top: 50rem;
+ top: 45rem;
  left: 20rem;
 
   & img:nth-child(2) {
@@ -201,7 +201,7 @@ section.book-animation div:nth-child(1).active {
 /* Estado inicial: elementos escondidos atrás da pin-04 */
 .pin-02,
 section.book-animation div:nth-child(1) {
-  transform: translateX(10rem) translateY(1rem) rotate(20deg);
+  transform: translateX(35rem) translateY(5rem) rotate(-20deg);
   opacity: 0;
   transition: all 1s ease-in-out;
 }
@@ -209,7 +209,7 @@ section.book-animation div:nth-child(1) {
 /* Quando a classe 'active' é adicionada via JS */
 .pin-02.active,
 section.book-animation div:nth-child(2).active {
-  transform: translateX(-5rem) translateY(-2rem) rotate(-10deg);
+  transform: translateX(-8rem) translateY(5rem) rotate(-15deg);
   opacity: 1;
   animation: float 4s ease-in-out infinite;
 }
@@ -217,7 +217,7 @@ section.book-animation div:nth-child(2).active {
 
 .pin-03,
 section.book-animation div:nth-child(3) {
-  transform: translateX(-25rem) translateY(-40rem) rotate(-180deg);
+  transform: translateX(-15rem) translateY(-40rem) rotate(-180deg);
   opacity: 0;
   transition: all 1s ease-in-out;
 }

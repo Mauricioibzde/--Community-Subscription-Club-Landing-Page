@@ -1,0 +1,164 @@
+/* CSS Limpo para Subscription Plans */
+
+.subscription-plans {
+    color: #fff;
+    padding: 5rem 1rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.subscription-plans h2 {
+    margin: 0 auto;
+    max-width: 30rem;
+    margin-bottom: 10rem;
+    
+}
+
+.plans {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: end;
+}
+
+/* Plan Card Base */
+.plan {
+    background: var(--shape-hover);
+    padding: 1rem 2rem 2rem 2rem;
+    border-radius: 1rem;
+    width: 20rem;
+    display: grid;
+    position: relative;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.plan h3 {
+    color: #9ca3af;
+}
+
+.plan .price {
+    text-align: left;
+    font: var(--title-sm);
+    margin-bottom: 0.5rem;
+}
+
+.plan .price span {
+    font: var(--link);
+    font-weight: 700;
+}
+
+.plan .price-year {
+    color: #9ca3af;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.plan ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.plan ul li {
+    text-align: left;
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.plan button {
+    background: #2563eb;
+    border: none;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    cursor: pointer;
+    height: 3rem;
+    align-self: center;
+    transition: background 0.3s ease;
+}
+
+.plan button:hover {
+    background: #1e40af;
+}
+
+/* Popular Badge */
+.popular {
+    background: var(--shape-base);
+    border: 1px solid var( --blue-mid);
+    transform: scale(1.05);
+}
+
+.popular .badge {
+    background: var(--shape-stroke);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+}
+
+.header-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Plan Positions */
+.plan-mensal {
+   & h3 {
+    color: var(--blue-light);
+   }
+    transform: translateX(1.5rem) translateY(1rem) rotate(-8deg);
+    z-index: 1;
+}
+
+.plan-semestral {
+    transform: translateX(0) translateY(-3rem) rotate(0);
+    z-index: 2;
+
+     & h3 {
+    color: var(--pink-light);
+   }
+
+   & button {
+    background: var(--pink-dark);
+   }
+
+   & button:hover {
+    background: var(--pink-base);
+
+    }
+
+   
+}
+
+.plan-anual {
+
+     & h3 {
+    color: var(--blue-light);
+   }
+    transform: translateX(-1.5rem) translateY(1rem) rotate(8deg);
+    z-index: 1;
+}
+
+/* Hover Animations */
+.plan-mensal:hover {
+    transform: translateX(1.5rem) translateY(-1rem) rotate(-8deg) scale(1.05);
+    z-index: 10;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.plan-semestral:hover {
+    transform: translateX(0) translateY(-4rem) rotate(0) scale(1.05);
+    z-index: 10;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.plan-anual:hover {
+    transform: translateX(-1.5rem) translateY(-1rem) rotate(8deg) scale(1.05);
+    z-index: 10;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
