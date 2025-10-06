@@ -23,9 +23,16 @@ section.book-animation {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      opacity: 0;              /* escondidos inicialmente */
+               /* escondidos inicialmente */
       transition: all 0.8s ease; /* animação suave */
     }
+
+    & img:nth-child(4) {
+    z-index: 3;
+      opacity: 1; /* A imagem principal está visível */
+    }
+
+
 
     /* Ao passar o mouse no container */
     &:hover {
@@ -86,7 +93,7 @@ section.book-animation {
         opacity: 1;
 
         p {
-          bottom: 1rem;
+          bottom: 5rem;
           right: 14.5rem;
         }
 
