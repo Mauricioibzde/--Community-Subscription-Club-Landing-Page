@@ -77,4 +77,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: var(--shape-background);
+    overflow-y: auto;
+}
+
+h1 {
+    font: var(--title-lg);
+    color: var(--text-title);
+}
+
+h2 {
+    font: var(--title-md);
+    color: var(--text-title);
+}
+
+p {
+    font: var(--body-lg);
+    color: var(--text-body);
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2.5rem 1rem;
+}
 

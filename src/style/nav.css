@@ -1,0 +1,11 @@
+nav {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.nav-buttons {
+    & .btn-primary {
+        width:max-content;
+        
+    }
+}

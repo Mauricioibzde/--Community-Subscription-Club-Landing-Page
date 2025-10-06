@@ -1,0 +1,30 @@
+section.section_01_hero {
+    width: 100%;
+    background-image: url('../img/hero-background.svg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: bottom 0% center ;
+    background-size: cover;
+  
+
+}
+
+.text-hero {
+    max-width: 41rem;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 6rem;
+    
+}
+
+
+
+
+
+   
+
+
+
+

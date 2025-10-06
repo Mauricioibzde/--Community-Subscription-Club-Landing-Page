@@ -1,0 +1,47 @@
+.animation-hero {
+   
+.img1x-hero {
+  display: flex;
+  justify-content: center;
+}
+
+.img1x-hero img {
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center;
+}
+
+.img1x-hero img:hover {
+  transform: scale(1.05) rotate(10deg);
+}
+
+.img2x-hero img {
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center;
+}
+
+.img2x-hero img:hover {
+  transform: scale(1.05) rotate(10deg);
+}
+
+    & p {
+      
+         text-align: center;
+         font: var( --subtitle);
+
+         & span {
+            color: var(--blue-light)
+            ;
+         }
+    }
+        
+}
+
+ 
+    
+
+
+
+  &     div.img2x-hero{
+     display: flex;
+     justify-content: space-between;
+  } 
