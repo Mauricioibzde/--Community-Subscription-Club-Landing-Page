@@ -1,4 +1,29 @@
 section.book-animation {
+
+  & div {
+   width: max-content;
+  }
+
+  & div:nth-child(1){
+    position: absolute;
+    left: -23rem;
+
+    
+
+   & img {
+     position:relative;
+      left: 5rem;
+            top: 3rem;
+
+   }
+
+
+  }
+
+
+  
+
+  
   & header {
     margin: 0 auto;
     width: 40rem;
@@ -8,100 +33,94 @@ section.book-animation {
     flex-wrap: wrap;
   }
 
-  & .book-animation-img {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  }
 
-    /* Todas as imagens começam centralizadas */
-    & img,
-    & div {
+  .pin-01{
+   
+    position: absolute;
+    animation: float 4s ease-in-out infinite;
+       width:max-content;
+    height: 5rem;
+
+    & img {
+   
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-               /* escondidos inicialmente */
-      transition: all 0.8s ease; /* animação suave */
-    }
-
-    & img:nth-child(4) {
-    z-index: 3;
-      opacity: 1; /* A imagem principal está visível */
-    }
-
-
-
-    /* Ao passar o mouse no container */
-    &:hover {
-      & img:nth-child(5) {
-        top: 50%;
-        left: 80%;
-        transform: translate(-50%, -50%);
-        opacity: 1;
-        z-index: -1;
-      }
-
-      & img:nth-child(6) {
-        top: 40%;
-        left: 70%;
-        transform: translate(-50%, -50%);
-        opacity: 1;
-        z-index: -1;
-      }
-
-      /* Pins animam para suas posições finais */
-      & div:nth-child(1) {
-        top: 50%;
-        left: 50%;
-        transform: translateX(-30rem) translateY(-23rem);
-        opacity: 1;
-
-        p {
-          bottom: 3rem;
-          right: 1.5rem;
-        }
-
-        img:nth-child(2) {
-          left: 10rem;
-        }
-      }
-
-      & div:nth-child(2) {
-        top: 95%;
-        left: 62%;
-        transform: translateX(-30rem) translateY(-23rem);
-        opacity: 1;
-
-        p {
-          bottom: 15rem;
-          right: 8.5rem;
-        }
-
-        img:nth-child(2) {
-          top: -8rem;
-          left: -3rem;
-        }
-      }
-
-      & div:nth-child(3) {
-        top: 73%;
-        left: 80%;
-        transform: translateX(-30rem) translateY(-23rem);
-        opacity: 1;
-
-        p {
-          bottom: 5rem;
-          right: 14.5rem;
-        }
-
-        img:nth-child(2) {
-          top: -8rem;
-          left: -3rem;
-        }
-      }
+      left: 5rem;
     }
   }
-}
+
+
+    .pin-02{
+     
+   position: absolute;
+    animation: float 4s ease-in-out infinite;
+       width:max-content;
+      left: -19rem;
+    top: 21rem;
+
+    & img:nth-child(2) {
+   
+        position: absolute;
+        left: 2rem;
+        top: 4rem;
+    }
+
+       & img:nth-child(3) {
+        position: absolute;
+        left: 5rem;
+        top: 8rem;
+    }
+  }
+
+
+      .pin-03{
+     
+      
+  position: absolute;
+    animation: float 4s ease-in-out infinite;
+       width:max-content;
+    height: 6rem;
+    right: -6rem;
+    bottom: -10rem;
+
+    & img:nth-child(2) {
+   
+        position: absolute;
+        left: 6rem;
+        bottom: 6rem;
+    }
+
+       & img:nth-child(3) {
+        position: absolute;
+        left: 5rem;
+        top: 8rem;
+    }
+  }
+
+  .pin-04 {
+    z-index: 2;
+position: absolute;
+    left: -7rem;
+    top: 3rem;
+    
+  }
+
+  .pin-05 {
+position: absolute;
+right: -23rem;
+  
+  }
+
+    .pin-06 {
+
+position: relative;
+top: -4rem;
+left: 15rem;
+  
+  }
+
+  .book-animation-img {
+    display: grid;
+    position: relative;
+  }
+  
