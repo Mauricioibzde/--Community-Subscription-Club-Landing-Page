@@ -1,29 +1,29 @@
 section.book-animation {
 
+  /* --- Estilos gerais --- */
   & div {
-   width: max-content;
+    width: max-content;
+    transition: all 0.8s ease-in-out;
   }
 
-  & div:nth-child(1){
+  /* --- DIV 1 --- */
+  & div:nth-child(1) {
+    animation-duration: 500ms;
     position: absolute;
     left: -23rem;
+     transform: translateX(20rem) translateY(5rem);
+   
 
-    
-
-   & img {
-     position:relative;
+    & img {
+      position: relative;
       left: 5rem;
-            top: 3rem;
-
-   }
-
-
+      top: 3rem;
+    }
   }
 
 
-  
 
-  
+  /* --- Header --- */
   & header {
     margin: 0 auto;
     width: 40rem;
@@ -32,95 +32,237 @@ section.book-animation {
     align-items: center;
     flex-wrap: wrap;
   }
+}
 
-  }
-
-  .pin-01{
-   
-    position: absolute;
-    animation: float 4s ease-in-out infinite;
-       width:max-content;
-    height: 5rem;
-
-    & img {
-   
-      position: absolute;
-      left: 5rem;
-    }
-  }
-
-
-    .pin-02{
-     
-   position: absolute;
-    animation: float 4s ease-in-out infinite;
-       width:max-content;
-      left: -19rem;
-    top: 21rem;
-
-    & img:nth-child(2) {
-   
-        position: absolute;
-        left: 2rem;
-        top: 4rem;
-    }
-
-       & img:nth-child(3) {
-        position: absolute;
-        left: 5rem;
-        top: 8rem;
-    }
-  }
-
-
-      .pin-03{
-     
-      
+/* --- PIN 01 --- */
+.pin-01 {
   position: absolute;
-    animation: float 4s ease-in-out infinite;
-       width:max-content;
-    height: 6rem;
-    right: -6rem;
-    bottom: -10rem;
+  animation: float 4s ease-in-out infinite;
+  width: max-content;
+  height: 5rem;
+  top: 4rem;
+  animation: movepin 4s ease-in-out infinite;
+ 
 
-    & img:nth-child(2) {
-   
-        position: absolute;
-        left: 6rem;
-        bottom: 6rem;
-    }
+  & img {
+    position: absolute;
+    left: 5rem;
+  }
+}
 
-       & img:nth-child(3) {
-        position: absolute;
-        left: 5rem;
-        top: 8rem;
-    }
+/* --- PIN 02 --- */
+.pin-02 {
+  position: absolute;
+  animation: float 4s ease-in-out infinite;
+  width: max-content;
+  left: -19rem;
+  top: 21rem;
+
+
+  & img:nth-child(2) {
+    position: absolute;
+    left: 2rem;
+    top: 4rem;
   }
 
-  .pin-04 {
-    z-index: 2;
-position: absolute;
-    left: -7rem;
-    top: 3rem;
+  & img:nth-child(3) {
+    position: absolute;
+    left: 5rem;
+    top: 8rem;
+  }
+}
+
+/* --- PIN 03 --- */
+.pin-03 {
+  position: absolute;
+  animation: float 4s ease-in-out infinite;
+  width: max-content;
+  height: 6rem;
+ top: 50rem;
+ left: 20rem;
+
+  & img:nth-child(2) {
+    position: absolute;
+    left: 6rem;
+    bottom: 6rem;
+  }
+
+  & img:nth-child(3) {
+    position: absolute;
+  
+  }
+}
+
+/* --- PIN 04 --- */
+.pin-04 {
+  z-index: 2;
+  position: absolute;
+  left: -4.5rem;
+  top: 3rem;
+}
+
+
+
+/* --- PIN 05 --- */
+.pin-05 {
+  position: absolute;
+  right: -23rem;
+}
+
+/* --- PIN 06 --- */
+.pin-06 {
+  position: relative;
+  top: -4rem;
+  left: 15rem;
+}
+
+/* --- Container principal --- */
+.book-animation-img {
+  display: grid;
+  position: relative;
+}
+
+/* =========================================================
+   HOVERS — todos separados e fáceis de editar
+   ========================================================= */
+
+section.book-animation {
+
+  /* Hover div 1 */
+  & div:nth-child(1):hover {
+    animation: float 4s ease-in-out infinite;
     
   }
+}
 
-  .pin-05 {
-position: absolute;
-right: -23rem;
+/* Hover pin-01 */
+.pin-01:hover {
+  transform: translateY(-7rem) rotate(-4deg);
+  animation: movePin 4s ease-in-out infinite;
+}
+
+/* Hover pin-02 */
+.pin-02:hover {
+   left: -19rem;
+   top: 21rem;
+  transform: translateX(1rem) translateY(-0.5rem) rotate(3deg);
+}
+
+/* Hover pin-03 */
+.pin-03:hover {
+  transform: translateY(0) rotate(0);
+}
+
+/* Hover pin-04 */
+.pin-04:hover {
+  transform: scale(1.1) rotate(6deg);
   
-  }
+}
 
-    .pin-06 {
+/* Hover pin-05 */
+.pin-05:hover {
+  transform: translateX(-0.5rem) translateY(0.5rem) rotate(-3deg);
+}
 
-position: relative;
-top: -4rem;
-left: 15rem;
-  
-  }
+/* Hover pin-06 */
+.pin-06:hover {
+  transform: translateY(-0.8rem) rotate(4deg);
+}
 
-  .book-animation-img {
-    display: grid;
-    position: relative;
+
+@keyframes movePin {
+  0% {
+    transform: translate(0, 0);
   }
-  
+  100% {
+    transform: translateX(25rem) translateY(5rem);
+  }
+}
+
+
+/* Estado inicial: elementos escondidos atrás da pin-04 */
+.pin-01,
+section.book-animation div:nth-child(1) {
+  transform: translateX(10rem) translateY(1rem) rotate(20deg);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+/* Quando a classe 'active' é adicionada via JS */
+.pin-01.active,
+section.book-animation div:nth-child(1).active {
+  transform: translateX(1rem) translateY(-10rem) rotate(0deg);
+  opacity: 1;
+  animation: float 4s ease-in-out infinite;
+}
+
+
+
+/* Estado inicial: elementos escondidos atrás da pin-04 */
+.pin-02,
+section.book-animation div:nth-child(1) {
+  transform: translateX(10rem) translateY(1rem) rotate(20deg);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+/* Quando a classe 'active' é adicionada via JS */
+.pin-02.active,
+section.book-animation div:nth-child(2).active {
+  transform: translateX(-5rem) translateY(-2rem) rotate(-10deg);
+  opacity: 1;
+  animation: float 4s ease-in-out infinite;
+}
+
+
+.pin-03,
+section.book-animation div:nth-child(3) {
+  transform: translateX(-25rem) translateY(-40rem) rotate(-180deg);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+/* Quando a classe 'active' é adicionada via JS */
+.pin-03.active,
+section.book-animation div:nth-child(3).active {
+  transform: translateX(0rem) translateY(0rem) rotate(0deg);
+  opacity: 1;
+  animation: float 4s ease-in-out infinite;
+
+}
+
+
+
+.pin-05,
+section.book-animation div:nth-child(5) {
+  transform: translateX(-25rem) translateY(10rem) rotate(-400deg);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+/* Quando a classe 'active' é adicionada via JS */
+.pin-05.active,
+section.book-animation div:nth-child(5).active {
+  transform: translateX(0rem) translateY(0rem) rotate(0deg);
+  opacity: 1;
+  animation: float 4s ease-in-out infinite;
+
+}
+
+
+.pin-06,
+section.book-animation div:nth-child(6) {
+  transform: translateX(-25rem) translateY(5rem) rotate(-400deg);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+/* Quando a classe 'active' é adicionada via JS */
+.pin-06.active,
+section.book-animation div:nth-child(6).active {
+  transform: translateX(0rem) translateY(0rem) rotate(0deg);
+  opacity: 1;
+  animation: float 4s ease-in-out infinite;
+
+}
+
