@@ -148,20 +148,23 @@
 .plan-mensal:hover {
     transform: translateX(1.5rem) translateY(-1rem) rotate(-8deg) scale(1.05);
     z-index: 10;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+   box-shadow: 0 0px 15px var(--shape-base);
     background-color: var(--shape-hover);
+      border: 1px solid var(--shape-hover);
 }
 
 .plan-semestral:hover {
     transform: translateX(0) translateY(-4rem) rotate(0) scale(1.05);
     z-index: 10;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+   box-shadow: 0 0px 15px var(--shape-hover);
     background-color: var(--shape-hover);
+     border: 1px solid var(--shape-hover);
 }
 
 .plan-anual:hover {
     transform: translateX(-1.5rem) translateY(-1rem) rotate(8deg) scale(1.05);
     z-index: 10;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 0px 15px var(--shape-hover);
     background-color: var(--shape-hover);
+     border: 1px solid var(--shape-hover);
 }
