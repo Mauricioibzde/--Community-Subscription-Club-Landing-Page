@@ -1,17 +1,28 @@
-// Seleciona o elemento que vai ser o "gatilho"
-const trigger = document.querySelector('.pin-04');
+const billingButtons = document.querySelectorAll('[data-billing]');
+const planPrices = document.querySelectorAll('.price[data-monthly][data-yearly]');
 
-// Seleciona os elementos que vão se animar
-const targets = document.querySelectorAll(
-  '.pin-01, .pin-02, .pin-03, .pin-05, .pin-06, section.book-animation div:nth-child(1)'
-);
+billingButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    billingButtons.forEach((item) => item.classList.remove('active'));
+    button.classList.add('active');
 
-// Adiciona a classe 'active' quando o mouse entra
-trigger.addEventListener('mouseenter', () => {
-  targets.forEach(el => el.classList.add('active'));
+    const billingType = button.dataset.billing;
+    const note = billingType === 'yearly' ? '/mês no plano anual' : 'por mês';
+
+    planPrices.forEach((priceElement) => {
+      priceElement.textContent = priceElement.dataset[billingType];
+      const priceNote = priceElement.nextElementSibling;
+      if (priceNote) priceNote.textContent = note;
+    });
+  });
 });
 
-// Remove a classe quando o mouse sai
-trigger.addEventListener('mouseleave', () => {
-  targets.forEach(el => el.classList.remove('active'));
+const faqItems = document.querySelectorAll('.faq details');
+faqItems.forEach((item) => {
+  item.addEventListener('toggle', () => {
+    if (!item.open) return;
+    faqItems.forEach((other) => {
+      if (other !== item) other.open = false;
+    });
+  });
 });

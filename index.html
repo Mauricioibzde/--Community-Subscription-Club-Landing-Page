@@ -1,161 +1,189 @@
-<!--
-        <button class="btn-primary">
-        label
-    </button>
-    <button class="btn-secondary">
-        label   
-     </button>
-    -->
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Subscription Club Landing Page</title>
-    <link rel="stylesheet" href="./src/style/index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Literary Enchantments Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/style/index.css" />
 </head>
-
 <body>
-    <main>
+  <header class="hero" id="inicio">
+    <nav class="container nav">
+      <img src="./src/icon/logo-horizontal.svg" alt="Literary Enchantments" class="logo" />
+      <div class="nav-links">
+        <a href="#beneficios">Benefícios</a>
+        <a href="#kits">Kit mensal</a>
+        <a href="#planos">Planos</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <button class="btn btn-primary">Assinar agora</button>
+    </nav>
 
-        <section class="section_01_hero">
-            
-            <nav class="container">
-                <img src="./src/icon/logo-horizontal.svg" alt="Community Subscription Club">
-                <div class="nav-buttons">
-                    <button class="btn-primary">Join Now</button>
-                </div>
-            </nav>
-
-            <div class="text-hero">
-                <h1>Awaken your imagination and explore new worlds</h1>
-                <p>“Join the Literary Enchantments subscription club and discover wonders and adventures on every page.” </p>
-            </div>
-
-        </section>
-
-        <section>
-            <div class="animation-hero container">
-                <div class="img1x-hero">
-                     <img src="./src/icon/Book.svg" alt="Book Illustration">
-                </div>
-                <p>Receive every month a <span>surprise book</span> of your favorite theme, accompanied by <span>exclusive gifts</span> that will make your reading experience <span>enchanting</span>.</p>
-                <div class="img2x-hero">
-                    <img src="./src/icon/Ouija.svg" alt="Hero Illustration">
-                    <img src="./src/icon/Ball.svg" alt="Hero Illustration">
-                </div>
-            </div>
-        </section>
-
-        <section class="book-animation">
-            <header>
-                <img src="./src/icon/star.svg" alt="star icon">
-                <h2>Discover the monthly kit</h2>
-                <img src="./src/icon/star.svg" alt="star icon">
-                <p>Receive a surprise box every month</p>
-            </header>
-            <div class="book-animation-img container">
-
-                <div class="pin-01">
-                    <p>Hardcover book</p>
-                    <img src="./src/img/arrow-2.svg" alt="arrow">
-                </div>
-
-                <div class="pin-02">
-                    <p>Exclusive pin</p>
-                    <img src="./src/img/arrow-1.svg" alt="arrow">
-                    <img src="./src/img/pin.svg" alt="Book Open Illustration">
-                </div>
-
-                <div class="pin-03">
-                    <p>Themed bookmark</p>
-                    <img src="./src/img/arrow.svg" alt="arrow">
-                </div>
-
-                <div class="pin-04">
-                    <img src="./src/img/book.svg" alt="Book Open Illustration">
-                </div>
-
-                <div class="pin-05">
-                     <img src="./src/img/bookmark-purple.svg" alt="Book Open Illustration">
-                </div>
-
-                <div class="pin-06">
-                     <img src="./src/img/bookmark-yellow.svg" alt="Book Open Illustration">
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- HTML -->
-<section class="subscription-plans">
-  <div class="container">
-    <h2>Literary Enchantments Subscription</h2>
-    <div class="plans">
-
-      <!-- Monthly Plan - This Month Promotion -->
-      <div class="plan plan-mensal popular">
-        <div class="header-card">
-          <h3>Monthly</h3>
-          
+    <div class="container hero-content">
+      <div>
+        <p class="eyebrow">Experiência premium para leitores apaixonados</p>
+        <h1>Seu clube literário com UX clean, curadoria forte e comunidade ativa.</h1>
+        <p class="hero-description">Todo mês você recebe um livro surpresa, brindes colecionáveis e acesso a uma jornada digital desenhada para encantar em cada interação.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#planos">Quero entrar no clube</a>
+          <a class="btn btn-secondary" href="#beneficios">Conhecer benefícios</a>
         </div>
-        <p class="price">$7.90<span>/month</span></p>
-        <p class="price-year">Special monthly promotion!</p>
-        <ul>
-          <li>Receive 1 surprise book this month</li>
-          <li>Includes exclusive bookmark + small gift</li>
-          <li>Access to the newsletter with reading tips</li>
-          <li>Participate in online book discussion</li>
-        </ul>
-        <button>Subscribe Now</button>
+        <div class="hero-stats">
+          <article>
+            <strong>+12k</strong>
+            <span>assinantes ativos</span>
+          </article>
+          <article>
+            <strong>4.9/5</strong>
+            <span>satisfação média</span>
+          </article>
+          <article>
+            <strong>48h</strong>
+            <span>suporte dedicado</span>
+          </article>
+        </div>
       </div>
 
-      <!-- Semester Plan -->
-      <div class="plan plan-semestral popular">
-        <div class="header-card">
-          <h3>Semester</h3>
-          <span class="badge">POPULAR</span>
-        </div>
-        <p class="price">$10.90<span>/month</span></p>
-        <p class="price-year">$65.40 per 6 months</p>
+      <aside class="hero-card">
+        <h2>O que torna o clube premium?</h2>
         <ul>
-          <li>6 curated books delivered over the semester</li>
-          <li>Exclusive pins, bookmarks, and themed merchandise</li>
-          <li>Priority access to virtual author events</li>
-          <li>Discounts on special edition books</li>
+          <li>Curadoria mensal por tema e perfil de leitura.</li>
+          <li>Área de membros com desafios e recomendações.</li>
+          <li>Experiência visual elegante e navegação intuitiva.</li>
         </ul>
-        <button>Subscribe Semester</button>
-      </div>
-
-      <!-- Annual Plan -->
-      <div class="plan plan-anual popular">
-        <div class="header-card">
-          <h3>Annual</h3>
-        </div>
-        <p class="price">$9.90<span>/month</span></p>
-        <p class="price-year">$118.80 per year</p>
-        <ul>
-          <li>12 surprise books delivered throughout the year</li>
-          <li>Exclusive merchandise including pins, bookmarks, and tote bag</li>
-          <li>Access to all online events and workshops</li>
-          <li>Special recognition as premium club member</li>
-        </ul>
-        <button>Subscribe Annual</button>
-      </div>
-
+      </aside>
     </div>
-  </div>
-</section>
+  </header>
 
+  <main>
+    <section class="container section" id="beneficios">
+      <div class="section-title">
+        <p class="eyebrow">Benefícios distribuídos com clareza</p>
+        <h2>Estrutura pensada com qualidade de engenharia e foco em UX</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="card">
+          <h3>Trilha de leitura personalizada</h3>
+          <p>Descubra obras alinhadas ao seu estilo com sugestões inteligentes e progressivas.</p>
+        </article>
+        <article class="card">
+          <h3>Comunidade e eventos exclusivos</h3>
+          <p>Participe de discussões, encontros online e lives com autores convidados.</p>
+        </article>
+        <article class="card">
+          <h3>Brindes colecionáveis</h3>
+          <p>Receba marcadores temáticos, pins e itens especiais para ampliar sua experiência.</p>
+        </article>
+        <article class="card">
+          <h3>Experiência digital fluida</h3>
+          <p>Navegação limpa, conteúdo bem distribuído e interações que facilitam sua jornada.</p>
+        </article>
+      </div>
+    </section>
 
-    </main>
+    <section class="container section" id="kits">
+      <div class="section-title">
+        <p class="eyebrow">Kit mensal</p>
+        <h2>Uma entrega completa para transformar sua rotina de leitura</h2>
+      </div>
+      <div class="kit-layout">
+        <div class="kit-visual">
+          <img class="book" src="./src/img/book.svg" alt="Livro do kit" />
+          <img class="bookmark-purple" src="./src/img/bookmark-purple.svg" alt="Marcador roxo" />
+          <img class="bookmark-yellow" src="./src/img/bookmark-yellow.svg" alt="Marcador amarelo" />
+          <img class="pin" src="./src/img/pin.svg" alt="Pin exclusivo" />
+        </div>
+        <ul class="kit-list">
+          <li><span>01</span> Livro capa dura surpresa</li>
+          <li><span>02</span> Marcadores exclusivos colecionáveis</li>
+          <li><span>03</span> Pin temático de edição limitada</li>
+          <li><span>04</span> Acesso a desafios e guia de leitura</li>
+        </ul>
+      </div>
+    </section>
 
+    <section class="container section" id="planos">
+      <div class="section-title">
+        <p class="eyebrow">Planos flexíveis</p>
+        <h2>Escolha a assinatura ideal para o seu ritmo</h2>
+      </div>
+
+      <div class="billing-toggle" role="group" aria-label="Selecione o período de cobrança">
+        <button class="active" data-billing="monthly">Mensal</button>
+        <button data-billing="yearly">Anual (2 meses grátis)</button>
+      </div>
+
+      <div class="plans">
+        <article class="plan">
+          <h3>Starter</h3>
+          <p class="price" data-monthly="R$ 29,90" data-yearly="R$ 24,90">R$ 29,90</p>
+          <p class="price-note">por mês</p>
+          <ul>
+            <li>1 livro surpresa por mês</li>
+            <li>1 brinde exclusivo</li>
+            <li>Acesso à comunidade</li>
+          </ul>
+          <button class="btn btn-secondary">Assinar Starter</button>
+        </article>
+
+        <article class="plan featured">
+          <span class="badge">Mais escolhido</span>
+          <h3>Premium</h3>
+          <p class="price" data-monthly="R$ 49,90" data-yearly="R$ 41,90">R$ 49,90</p>
+          <p class="price-note">por mês</p>
+          <ul>
+            <li>Livro + 3 brindes premium</li>
+            <li>Eventos com autores</li>
+            <li>Área de membros avançada</li>
+          </ul>
+          <button class="btn btn-primary">Assinar Premium</button>
+        </article>
+
+        <article class="plan">
+          <h3>Elite</h3>
+          <p class="price" data-monthly="R$ 69,90" data-yearly="R$ 57,90">R$ 69,90</p>
+          <p class="price-note">por mês</p>
+          <ul>
+            <li>2 livros por mês</li>
+            <li>Box colecionável e brindes raros</li>
+            <li>Mentorias e clube fechado</li>
+          </ul>
+          <button class="btn btn-secondary">Assinar Elite</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section" id="faq">
+      <div class="section-title">
+        <p class="eyebrow">Dúvidas frequentes</p>
+        <h2>Transparência total para você entrar com confiança</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>Quando recebo meu kit?</summary>
+          <p>Os envios ocorrem entre os dias 05 e 10 de cada mês, com rastreio disponível no painel.</p>
+        </details>
+        <details>
+          <summary>Posso pausar ou cancelar quando quiser?</summary>
+          <p>Sim. Você pode pausar por até 2 meses ou cancelar sem burocracia pelo painel do assinante.</p>
+        </details>
+        <details>
+          <summary>Os livros são repetidos?</summary>
+          <p>Não. Utilizamos seu histórico para evitar repetições e manter a experiência sempre surpreendente.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Literary Enchantments Club · Experiência premium para leitores.</p>
+    </div>
+  </footer>
+
+  <script src="./src/script/script.js"></script>
 </body>
-<script src="src/script/script.js"></script>
-
 </html>
